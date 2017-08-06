@@ -1,0 +1,70 @@
+.owl-carousel .owl-stage-outer {
+  margin-top: 30px;
+  min-height: 306px;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: block!important;
+}
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -30px;
+}
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -30px;
+}
+.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+  background-color: $whiteColor;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 17px 0 rgba(47, 56, 15, 0.12);
+  transition: all 0.3s ease;
+}
+.owl-carousel .owl-nav .owl-next:hover, .owl-carousel .owl-nav .owl-next:focus, .owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-prev:focus {
+  background-color: $mainColor;
+  box-shadow: 0 2px 17px 0 rgba(47, 56, 15, 0.12);
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-dot {
+  display: inline-block;
+}
+
+.owl-dots, .owl-dot {
+  display: inline-block;
+  margin-top: 10px;
+}
+.owl-dots span, .owl-dot span {
+  background: none repeat scroll 0 0 $mainColor;
+  border-radius: 20px;
+  display: block;
+  margin-right: 7px;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  transition: all 0.3 ease;
+}
+.owl-dots span:hover, .owl-dots span:focus, .owl-dot span:hover, .owl-dot span:focus {
+  opacity: 0.7;
+}
+.owl-dots.active span, .owl-dot.active span {
+  background: $mainColor;
+  opacity: 1;
+}
+
+.owl-dots {
+  display: block!important;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .owl-dots {
+    display: none!important;
+  }
+  .owl-carousel .owl-nav {
+    display: none!important;
+  }
+}
